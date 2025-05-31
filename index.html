@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chelsea Football Club</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="70" tabindex="0">
+
+  <!-- Navbar -->
+  <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <button id="desktopSidebarToggle" class="btn btn-outline-light me-2 d-none d-lg-inline-block">
+        <i class="bi bi-list">5th Stand</i>
+      </button>
+      <a class="navbar-brand" href="#hero">Chelsea Football Club</a>
+    </div>
+    <button id="sidebarToggleBtn" class="btn btn-dark d-lg-none me-2" aria-label="Open sidebar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </nav>
+
+  <!-- Sidebar -->
+  <div id="sidebar" class="sidebar">
+    <button id="closeSidebarBtn" class="close-btn" aria-label="Close sidebar">&times;</button>
+    <ul class="sidebar-nav">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#modal">Special Offer</a></li>
+      <li><a href="#accordion">FAQs</a></li>
+      <li><a href="#carousel">Our Memories</a></li>
+      <li><a href="#typography">Our History</a></li>
+      <li><a href="#tooltip">Need Help?</a></li>
+      <li><a href="#list">Why Choose Us</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+
+  <div id="sidebarOverlay" class="sidebar-overlay"></div>
+
+  <!-- Hero Section -->
+  <div id="hero" class="hero text-center p-5 bg-light" role="banner" aria-label="Golden Crust Bakery Banner">
+    <h1 class="display-4 fw-bold">Welcome to CHELSEA FOOTBALL CLUB</h1>
+    <p class="lead">Where you enjoy football games every season.</p>
+  </div>
+
+  <div class="container">
+
+    <!-- Modal Section -->
+    <section id="modal" class="my-5">
+      <h2>Special Offer</h2>
+      <p class="text-center mb-4 fs-5">Win 5 match tickets as a registered fan!</p>
+      <div class="text-center">
+        <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#offerModal">Check Us Out</button>
+      </div>
+      <div class="modal fade" id="offerModal" tabindex="-1" aria-labelledby="offerModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="offerModalLabel">Best Club Ever!</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body fs-6">
+              Become a fan today and get badge with execess offers!
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <a href="#contact" class="btn btn-primary">Register Today</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Plans -->
+    <section id="pricing" class="py-5 bg-light">
+      <div class="container text-center">
+        <h2 class="fw-bold mb-4">What We Offer</h2>
+        <div class="row justify-content-center g-4">
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">Match tickets</h5>
+                <h3 class="text-primary">$5<span class="fs-6">/ticket</span></h3>
+                <p class="text-muted">Get Discount on every Ticket</p>
+                <ul class="list-unstyled text-start">
+                  <li>✔ Home and Away tickets</li>
+                  <li>✔ The more you buy, the more your discount</li>
+                </ul>
+                <button class="btn btn-outline-primary mt-3">Order Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm border-primary border-2">
+              <div class="card-body">
+                <h5 class="card-title">Want to buy jersey?</h5>
+                <h3 class="text-primary">$10<span class="fs-6">/per Jersey</span></h3>
+                <p class="text-muted">A pack of Our Jersey</p>
+                <ul class="list-unstyled text-start">
+                  <li>✔ Multiple Colours </li>
+                  <li>✔ Delivered to your door</li>
+                </ul>
+                <button class="btn btn-primary mt-3">Follow are Pages</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">Get Our App</h5>
+                <h3 class="text-primary">Enjoy<span class="fs-6">/Football</span></h3>
+                <p class="text-muted">Explore Titles Room</p>
+                <ul class="list-unstyled text-start">
+                  <li>✔ 5 Premier League Titles</li>
+                  <li>✔ Won all the European Competition</li>
+                </ul>
+                <button class="btn btn-outline-primary mt-3">Subscribe To Our Channel</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQs -->
+    <section id="accordion" class="my-5">
+      <h2>FAQs</h2>
+      <div class="accordion mx-auto" id="faqAccordion" style="max-width: 800px;">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">
+              What makes Our Team special?
+            </button>
+          </h2>
+          <div id="faq1" class="accordion-collapse collapse show">
+            <div class="accordion-body">
+                Chelsea FC was founded in 1905 at The Rising Sun pub (now The Butcher’s Hook) in Fulham, London. The club's home ground, Stamford Bridge, has been its base since the beginning. Chelsea joined the Football League shortly after its formation and quickly gained a reputation for attracting large crowds.
+                While the club had early flashes of promise, major success eluded them until 1955, when they won their first First Division title. The 1960s and 70s brought more silverware, including the FA Cup (1970) and UEFA Cup Winners’ Cup (1971).
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq2">
+              What's Our History
+            </button>
+          </h2>
+          <div id="faq2" class="accordion-collapse collapse">
+            <div class="accordion-body">
+                The 1980s were turbulent, with financial issues and on-pitch struggles, including relegation. However, the 1990s marked a revival, thanks to high-profile players and the arrival of managers like Ruud Gullit and Gianluca Vialli, leading to FA Cup and League Cup wins.
+                A turning point came in 2003, when Russian billionaire Roman Abramovich bought the club. His investment transformed Chelsea into a global football powerhouse.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Carousel -->
+    <section id="carousel" class="my-5">
+      <h2>Our Memories</h2>
+      <div id="productCarousel" class="carousel slide" data-bs-ride="carousel" style="max-width: 850px; margin: 0 auto;">
+        <div class="carousel-inner rounded-4 shadow-sm">
+          <div class="carousel-item active">
+            <img src="./images/7468f0949db1b1941dde52745fc2648d.jpg" class="d-block w-100" alt="Sourdough">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/5166.jpeg" class="d-block w-100" alt="Baguette">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/3df4502d8fac09ec88f008484877ec21.jpg" class="d-block w-100" alt="Cinnamon Rolls">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Mission -->
+    <section id="typography" class="my-5">
+      <h2>Our History</h2>
+      <p class="lead">
+        Club Culture and History – Founded in 1905, Chelsea has a rich history and passionate fanbase that many people want to be part of /p>
+    </section>
+
+    <!-- Tooltip Help -->
+    <section id="tooltip" class="my-5 text-center">
+      <h2>Need Help?</h2>
+      <p class="mb-3 fs-5">Have questions? Our team is here to assist.</p>
+      <button type="button" class="btn btn-info" data-bs-toggle="tooltip" data-bs-placement="top" title="Reach out for custom orders, dietary requests, and delivery help.">
+         Assistance
+      </button>
+    </section>
+
+    <!-- Benefits -->
+    <section id="list" class="my-5">
+      <h2>Why Choose Us</h2>
+      <ul class="list-group mx-auto" style="max-width: 600px;">
+        <li class="list-group-item active">Winning Mentality</li>
+        <li class="list-group-item">Star Players – Over the years, Chelsea has had world-class players like Didier Drogba, Frank Lampard, Eden Hazard, and currently Enzo Fernández and Reece James, which draws admiration.</li>
+        <li class="list-group-item">Success and Trophies – Chelsea has won multiple major titles, including the Premier League, UEFA Champions League, and FA Cup, attracting fans who admire winning teams.</li>
+        <li class="list-group-item">Exciting Football – The team is known for playing high-level, competitive football in one of the world’s most watched leagues.</li>
+        <li class="list-group-item">Club Culture and History – Founded in 1905, Chelsea has a rich history and passionate fanbase that many people want to be part o</li>
+      </ul>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="my-5">
+      <h2>Contact Us</h2>
+      <p class="lead text-center mb-4">Want to work at Stamford Bridge?</p>
+      <p class="lead text-center mb-4'/p>
+      <form>
+        <div class="mb-3">
+          <label for="contactName" class="form-label">Full Name</label>
+          <input type="text" class="form-control" id="contactName" placeholder="Your full name" required />
+        </div>
+        <div class="mb-3">
+          <label for="contactEmail" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="contactEmail" placeholder="name@example.com" required />
+        </div>
+        <div class="mb-3">
+          <label for="contactMessage" class="form-label">Message</label>
+          <textarea class="form-control" id="contactMessage" rows="5" placeholder="How can we serve you today?" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+    </section>
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center py-3">
+    &copy; 2025 chelsea Football Club. All right reserved.
+  </footer>
+
+  <!-- Toast -->
+  <div id="successToast" class="toast-notification" role="alert" aria-live="assertive" aria-atomic="true" hidden>
+    <span class="toast-icon" aria-hidden="true">&#10003;</span>
+    <div class="toast-content">
+      <strong>Thank You!</strong> Your message has been received. We’ll be in touch soon!
+      <button id="closeToastBtn" aria-label="Close notification">&times;</button>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const tooltipTriggerList = [...document.querySelectorAll('[data-bs-toggle="tooltip"]')];
+    tooltipTriggerList.forEach(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
